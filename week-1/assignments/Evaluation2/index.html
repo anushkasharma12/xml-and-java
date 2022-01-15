@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation 2</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <form>
+            <p>Fields with * are required.</p>
+            <fieldset>
+                <legend>Feedback Form</legend>
+
+                <label for="email">E-mail:</label> <span>*</span>
+                <input type="text" id="email" name="email" autofocus required /><br />
+
+                <label for="date">Date of visit:</label> <span>*</span>
+                <input type="date" name="date" required >
+
+                </br>
+
+                <label>Your Comment: </label> </br>
+                <textarea id="comment" name="message" placeholder="Please write comments here..." rows="7"
+                    cols="50"></textarea>
+                </br>
+                <button name="button" type="button" onclick="userFeedback()">Send your Feedback</button>
+                </br>
+                <p><span id='feedback'></span></p>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script>
+        function userFeedback() {
+            document.getElementById('feedback').innerHTML =
+                document.getElementById("comment").value;
+        }
+    </script>
+</body>
+
+</html>

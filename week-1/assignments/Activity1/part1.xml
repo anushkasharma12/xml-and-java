@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myMessage>
+    <introduction> Hi, I'm Anushka Sharma. I'm from Jammu and Kashmir, India. I have done Bachelor's
+         degree in Electrical Engineering.</introduction>
+    <interests>
+        <hobby_1>Travelling</hobby_1>
+        <hobby_2>Collecting souvenirs from places I visit.</hobby_2>
+        <hobby_3>Cooking</hobby_3>
+    </interests>
+</myMessage>

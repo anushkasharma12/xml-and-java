@@ -1,0 +1,19 @@
+#wrapper {
+    width: 40%;
+    min-width: 700px;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f8e6c0;
+    border: 3px solid black;
+  }
+  p {
+      font-family:sans-serif;
+      text-align:left;
+      font-style: italic;
+
+  }
+  form {
+      font-family:sans-serif;
+      font-weight: 200;
+  }

@@ -1,0 +1,3 @@
+part 1: i have created an xml file in which introduction and interests both are child elements for root <mymessage>.
+part 2: In this xml file, there is prolog in the first line, then there is root <message> which has <student_number>
+ as child elements and introduction and interests as sub-child elements. 

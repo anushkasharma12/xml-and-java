@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<message>
+    <student>
+        <introduction> Hi, I'm Anushka Sharma. I'm from Jammu and Kashmir, India. I have done Bachelor's
+         degree in Electrical Engineering.</introduction>
+        <interests>
+            <hobby_1>Travelling</hobby_1>
+            <hobby_2>Collecting souvenirs from places I visit.</hobby_2>
+            <hobby_3>Cooking</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction> name and educational background</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction>name and educational background</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction>  name and educational background</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction>----content-------</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction> -----content------</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction> -----content------</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction> -----content------</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction> -----content------</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+    <student>
+        <introduction> -----content------</introduction>
+        <interests>
+            <hobby_1>abc</hobby_1>
+            <hobby_2>xyz</hobby_2>
+            <hobby_3>123</hobby_3>
+        </interests>
+    </student>
+
+</message>
