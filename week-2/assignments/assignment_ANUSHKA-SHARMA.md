@@ -35,7 +35,7 @@ element name as it cannot contain blank spaces. So , the correct format for elem
 
 ![image info](../Assets/validation1.png)
 
-![image info](..Assets/validation2.png)
+![image info](../Assets/validation2.png)
 
 7. 
-![image info](../Assets/aquestion7.png)
+![image info](../Assets/question7.png)
