@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="activity-3.xsl"?>
 <products>
   <product sku="BOS12DDF2" createdAt="2020-12-23T09:23:44" shippable="true">
-    <productName>Dog Shirt Gift Basketuery</productName>
+    <productName>Dog Shirt Gift Basket</productName>
     <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
     <description>Something for every day of the week</description>
     <prices>
