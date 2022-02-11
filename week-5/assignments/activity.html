@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Pizza Order</title>
+    <script language="JavaScript">
+
+        function MyOrder(event) {
+            event.preventDefault();
+
+            const form = event.target;
+
+            const inputControl = form.inputbox;
+            const inputValue = inputControl.value;
+
+            console.log(`Order under name : ${inputValue}`);
+
+            if (document.getElementById("Veggie").selected = true) {
+                console.log("Pizza choice: Veggie")
+            }
+            else if (document.getElementById("Paparoni").selected = true) {
+                console.log("Pizza choice:  Paparoni")
+            }
+            if (document.getElementById('YES').checked == true) {
+            console.log('Extra cheese required.');
+
+            } else {
+                console.log('Do not add extra cheese.')
+            }
+
+            inputControl.value = "";
+        }
+    </script>
+</head>
+
+<body>
+
+    <form onSubmit="return MyOrder(event)" action="" method="get">
+        Please enter your name here: <br />
+    <!-- text area -->
+        <input type="text" name="inputbox" value="" required /> <br />
+        <label for="choice"> Pizza Chioce</label> <br />
+    <!-- radio button -->
+        <input type="radio" id="Veggie" name="choice" value="v" required> Veggie <br />
+        <input type="radio" id="Paparoni" name="choice" value="p">Paparoni<br />
+    <!-- Checkbox -->
+        <label for="Extra cheese ">Click here to add beverages.</label> <br />
+        <input type="checkbox" id="YES" name="beverage" value="Y" /> <br />
+    <!-- Submit button -->
+        <button type="submit">Click here to place order.</button>
+    </form>
+</body>
+
+</html>
