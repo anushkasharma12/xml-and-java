@@ -94,6 +94,7 @@ const renderTable = () =>
   }
 
     ];
+    {
     const withFilters = Boolean(window.location.search);
     if (withFilters) {
         const params = new URLSearchParams(window.location.search);
@@ -103,6 +104,8 @@ const renderTable = () =>
     
         data = data.filter(({ id }) => id.toLowerCase().includes(IDterm));
       }
+    }
+    {const withFilters = Boolean(window.location.search);
       if (withFilters) {
         const params = new URLSearchParams(window.location.search);
         const fnameTerm = params.get(`fname`).toLowerCase();
@@ -111,6 +114,8 @@ const renderTable = () =>
     
         data = data.filter(({ first_name}) => first_name.toLowerCase().includes(fnameTerm));
       }
+    }
+    {const withFilters = Boolean(window.location.search);
       if (withFilters) {
         const params = new URLSearchParams(window.location.search);
         const lnameTerm = params.get(`lname`).toLowerCase();
@@ -119,6 +124,8 @@ const renderTable = () =>
     
         data = data.filter(({ last_name }) => last_name.toLowerCase().includes(lnameTerm));
       }
+    }
+    {const withFilters = Boolean(window.location.search);
       if (withFilters) {
         const params = new URLSearchParams(window.location.search);
         const emailTerm = params.get(`Email`).toLowerCase();
@@ -127,6 +134,8 @@ const renderTable = () =>
     
         data = data.filter(({ email}) => email.toLowerCase().includes(emailTerm));
       }
+    }
+    {const withFilters = Boolean(window.location.search);
       if (withFilters) {
         const params = new URLSearchParams(window.location.search);
         const genderTerm = params.get(`Gender`).toLowerCase();
@@ -135,6 +144,8 @@ const renderTable = () =>
     
         data = data.filter(({ gender }) => gender.toLowerCase().includes(genderTerm));
       }
+    }
+    {const withFilters = Boolean(window.location.search);
       
       if (withFilters) {
         const params = new URLSearchParams(window.location.search);
@@ -144,6 +155,7 @@ const renderTable = () =>
     
         data = data.filter(({ ip_address }) => ip_address.toLowerCase().includes(IPterm));
       }
+    }
 
       const rows = data.map(({ id, first_name, last_name ,email ,gender, ip_address}) =>
     table.appendChild(
