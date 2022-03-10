@@ -67,7 +67,7 @@ const htmlToElement = (html) => {
         checkbox.checked = true;
       });
     }
-    const rows = data.map(
+    const rows = xmlData.map(
       ({ id, carName, founded,country,availability,price}) => 
         table.appendChild(
           htmlToElement( `<tr id ="table-row-${id}">
@@ -87,5 +87,4 @@ const htmlToElement = (html) => {
   };
  
   loadData(`http://localhost:8080/cars.xml`, xmlToJson);
-  renderTable();
   
