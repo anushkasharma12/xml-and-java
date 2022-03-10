@@ -3,15 +3,23 @@
   <xs:element name="Cars">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Car" maxOccurs="unbounded" minOccurs="0">
+        <xs:element maxOccurs="unbounded" name="Car">
           <xs:complexType>
             <xs:sequence>
-              <xs:element type="xs:string" name="Name"/>
-              <xs:element type="xs:string" name="Founded"/>
-              <xs:element type="xs:string" name="Country"/>
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Founded" type="xs:unsignedShort" />
+              <xs:element name="Country" type="xs:string" />
+              <xs:element name="StartingPrice">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="In_USD" type="xs:string" />
+                    <xs:element name="In_CAD" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
-            <xs:attribute type="xs:byte" name="id" use="optional"/>
-            <xs:attribute type="xs:string" name="category" use="optional"/>
+            <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+            <xs:attribute name="availability" type="xs:string" use="required" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
