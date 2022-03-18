@@ -5,6 +5,7 @@ const htmlToElement = (html) => {
   return template.content.firstChild;
 };
 
+
 const loadData = (path, callback) => {
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = ({ target }) => {
@@ -50,3 +51,9 @@ loadData(`./data.json`, (data) => renderTable(data));
 const onReset = () => {
   window.location.replace(window.location.pathname);
 };
+
+const onSubmit = (event) =>  {
+  event.preventDefault();
+  const nameTerm = event.target.name.value;
+  
+}

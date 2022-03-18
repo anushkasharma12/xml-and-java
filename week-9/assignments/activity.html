@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>IP Database</title>
+        <style>
+            table,
+            th,
+            td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              background-color: rgb(233, 196, 128);
+              font-family: cursive;
+            }
+        
+            th,
+            td {
+              padding: 5px;
+            }
+          </style>
+    </head>
+    <body>
+        <form>
+            <h3>Search Field: </h3>
+            <input
+              type="text"
+              name="search"
+              id="Search"
+              placeholder="Enter a word to filter..."
+            />
+            <button type="submit">Apply filters</button> <br />
+             <br />
+            <button type = "reset" value = "Reset filters">Reset filters</button>
+
+          </form>
+        <table id="myTable">
+            <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email address</th>
+                <th>Gender</th>
+                <th>IP address</th>
+            </tr>
+        </table>
+        <script type="text/javascript" src="activity.js"></script>
+    </body>
+</html>

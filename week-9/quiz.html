@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>HTML Form</title>
+    </head>
+    <body>
+        <h1>HTML Form</h1>
+        <form>
+        <h3>Text Field : </h3>
+        <input type="text" name="TextBox" id="searchName" placeholder="Enter value..." /> <br>
+        <h3>Dropdown : </h3>
+        <select id="vehicle" name="DropDown"> <br>
+            <option value="First">First</option>
+            <option value="Second">Second</option>
+            <option value="Third">Third</option>
+        </select>
+
+        <fieldset>
+            <legend>CheckBoxes</legend>
+            <br>
+            <input type="checkbox" id="bike" name="vehicle" value="bike">
+            <label for="bike">I have a bike.</label>
+            <input type="checkbox" id="car" name="vehicle" value="car">
+            <label for="car">I have a car.</label>
+            <input type="checkbox" id="boat" name="vehicle" value="boat">
+            <label for="boat">I have a boat.</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Radio Button:</legend>
+            <input type="radio" id="bike" name="radio" value="Bike" > I have a bike. <br />
+            <input type="radio" id="car" name="radio" value="car">I have a car. <br />
+            <input type="radio" id="boat" name="radio" value="boat">I have a boat. <br />
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+        <br>
+        <br>
+        <button type="cancel">Cancel</button>
+        <br>
+        </form>
+    </body>
+</html>
