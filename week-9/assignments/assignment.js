@@ -16,7 +16,7 @@ const htmlToElement = (html) => {
     xhttp.open("GET", path, true);
     xhttp.send();
   });
-  const renderTabledata = (data, searchWord) => {
+  const renderTableData = (data, searchWord) => {
     const table = document.getElementById("MyTable");
     if (searchWord) {
         searchWord = searchWord.toLowerCase();
@@ -44,10 +44,9 @@ const htmlToElement = (html) => {
   const onSubmit = (event) => {
 	event.preventDefault();
 	const searchWord = event.target.search.value;
-	loaddata("./people.json").then((data) => renderTabledata(data, searchWord));
+	loaddata("./people.json").then((data) => renderTableData(data, searchWord));
 };
-  loadData("./people.json").then((data) =>  renderTabledata(data));
-  const onReset = () => {
-    loadData(`./people.json`).then((data) => renderTabledata(data));
+  loadData("./people.json").then((data) =>  renderTableData(data));
+
   
   
