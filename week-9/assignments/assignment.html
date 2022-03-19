@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>People</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse:collapse;
+          background-color:rgb(233, 196, 128);
+          font-family:cursive;
+        }
+        th, td {
+          padding: 5px;
+        }
+    </style>
+  </head>
+  <body>
+      <form onsubmit ="onSubmit()">
+          <fieldset>
+              <legend>Search form </legend>
+              <h3>Search for name of person :</h3>
+              <input
+              type="text"
+              name="search"
+              id="Search"
+              placeholder="Enter a name to filter..."
+            />
+            <button type="submit">Submit Search...</button> <br />
+          </fieldset>
+      </form>
+    <table id="MyTable">
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>IP Address </th>
+      </tr>
+    </table>
+    <script type="text/javascript" src="assignment.js"></script>
+  </body>
+</html>
