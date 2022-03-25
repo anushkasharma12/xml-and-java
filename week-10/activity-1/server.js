@@ -1,6 +1,6 @@
 const http = require("http");
 
-const product = require("./controllers/activity-1");
+const activity = require("./controllers/activity-1");
 
 const parseURLParams = (value) => {
   const params = new URLSearchParams(value);
@@ -17,14 +17,14 @@ const server = http.createServer(async (req, res) => {
   if (basePath === "/api/activity-1" && req.method === "GET") {
     const params = parseURLParams(paramsString);
 
-    const { data, code } = await product.getAll(params);
+    const { data, code } = await activity.getAll(params);
 
     res.writeHead(code, { "Content-Type": "application/json" });
     res.end(data);
   } else if (basePath.match(/\/api\/activity-1\/\w+/) && req.method === "GET") {
     const id = basePath.split("/")[3];
 
-    const { data, code } = await product.getById(id);
+    const { data, code } = await activity.getById(id);
 
     res.writeHead(code, { "Content-Type": "application/json" });
     res.end(data);
