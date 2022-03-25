@@ -1,4 +1,4 @@
-const users = [
+const data = [
     
   {
     "isActive": false,
@@ -92,5 +92,7 @@ const users = [
   }
 ];
 
-const active = users.some(user => user.isActive);
-console.log(JSON.parse(data));
+console.log(data.filter(({isActive}) => isActive));
+const max = data.map(({balance }))
+const friends = data.map(({friends}) => friends).flat();
+console.log('friends');
