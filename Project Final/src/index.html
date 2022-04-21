@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Final Project</title>
+      <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: rgb(233, 196, 128);
+      font-family: cursive;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+  </style>
+  </head>
+  <body>
+    <form id="form" onsubmit="onSubmit(event)" onreset="onReset()">
+      <fieldset>
+      <legend>Credit Card Information</legend>
+      <input type="text" name="inputfield" id="inputfield-term" placeholder="Enter Value ... "/><br><br>
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset</button><br></fieldset>
+    </form>
+    <table >
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Car Model</th>
+          <th>Car Make</th>
+          <th>Model year</th>
+          <th>Car_vin</th>
+          <th>Color</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table> 
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>Universities</title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      background-color: rgb(233, 196, 128);
+      font-family: cursive;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="color: #aa6f73;">
+    <h2>CAR DATA!!!</h2>
+  </span>
+  <form onreset="onreset()" onsubmit="onsubmit(event)">
+    Search for Car Name <br>
+    <input type="text" name="TextBox" id="searchItem" placeholder="Type your search here..." /> <br>
+    <button type="submit">Search</button>
+    <br>
+    <br>
+    <button type="reset">Reset</button>
+    <br>
+  </form>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Car Model</th>
+      <th>Car Make</th>
+      <th>Model year</th>
+      <th>Car vin</th>
+      <th>Color</th>
+      <th>City</th>
+    </tr>
+    <tbody id="table-body"></tbody>
+  </table>
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+
+</html>
