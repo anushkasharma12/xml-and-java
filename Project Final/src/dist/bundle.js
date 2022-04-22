@@ -291,7 +291,7 @@ const renderTable = (data, nameTerm) => {
                           || filter.Car_vin === nameTerm
                           || filter.City === nameTerm
                           || filter.Car_model === nameTerm
-                          || filter.Model_year === nameTerm
+                          || `${filter.Model_year}` === nameTerm
     );
   }
 
